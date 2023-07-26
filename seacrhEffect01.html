@@ -36,7 +36,7 @@
                 </div>
                 <div class="search__info">
                     <div>
-                        CSS 속성 : <span></span>개
+                        CSS 속성 : <span>0</span>개
                     </div>
                 </div>
                 <div class="search__list">
@@ -53,7 +53,8 @@
                         <li data-name="animation-iteration-count"><strong>animation-iteration-count</strong> : 애니메이션 반복 횟수 설정.</li>
                         <li data-name="animation-name"><strong>animation-name</strong> : 애니메이션 keyframe 이름을 설정.</li>
                         <li data-name="animation-play-state"><strong>animation-play-state</strong> : 애니메이션 진행상태를 설정.</li>
-                        <li data-name="animation-timing-function"><strong>animation-timing-function</strong> : 애니메이션 움직임의 속도를 설정.<li data-name="backdrop-filter"><strong>backdrop-filter</strong> : 배경에 그래픽 효과를 설정.</li>
+                        <li data-name="animation-timing-function"><strong>animation-timing-function</strong> : 애니메이션 움직임의 속도를 설정.
+                        <li data-name="backdrop-filter"><strong>backdrop-filter</strong> : 배경에 그래픽 효과를 설정.</li>
                         <li data-name="backface-visibility"><strong>backface-visibility</strong> : 요소의 뒷면을 설정.</li>
                         <li data-name="background-attachment"><strong>background-attachment</strong> : 배경 이미지의 고정 여부를 설정.</li>
                         <li data-name="background-blend-mode"><strong>background-blend-mode</strong> : 배경을 혼합했을 때의 상태를 설정.</li>
@@ -294,7 +295,10 @@
         //선택자
         const searchBox = document.querySelector(".search__box input");
         const searchList = document.querySelectorAll(".search__list li");
-        const listNumber = document.querySelector(".search__info span")
+        const listNumber = document.querySelector(".search__info span");
+
+        //전체 수
+        document.querySelector(".search__info span").textContent = searchList.length;
 
         //검색
         searchBox.addEventListener("keyup",() => {
