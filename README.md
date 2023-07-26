@@ -5,7 +5,9 @@
 https://fitalux.github.io/web2023/javascript/seacrhEffect/seacrhEffect01.html
 
 # DESC
-
+이 프로젝트는 검색 기능을 구현하는 Javascript입니다.
+웹페이지 내에서 사용자가 검색어를 입력하면 입력된 검색어와 일치하는 항목들을 보여주고 일치하지 않는 항목들을 숨기는 기능을 제공합니다.
+사용자가 키워드를 입력하면 입력한 내용과 일치하는 검색 결과와 일치하는 항목의 갯수를 확인할 수 있습니다.
 
 # SCRIPT DESC
 
